@@ -14,7 +14,7 @@ from google.cloud import  bigquery
 import pandas as pd
 
 # Replace with the actual path to your JSON key file
-credentials_path = "/content/caixa-bank-6c4f815e89ac.json"
+credentials_path = "/Users/amir/Downloads/caixa-bank-6c4f815e89ac.json"
 
 # Check if the file exists
 if not os.path.exists(credentials_path):
@@ -195,7 +195,7 @@ y_pred = rfc.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
-import joblib
+"""import joblib
 
 # Save the trained model
 joblib.dump(rfc, 'rfc.pkl')
@@ -203,7 +203,7 @@ joblib.dump(rfc, 'rfc.pkl')
 # Save the scaler
 joblib.dump(scaler, 'rfc_scaler.pkl')
 
-print("Model and scaler saved successfully!")
+print("Model and scaler saved successfully!")"""
 
 import pandas as pd
 

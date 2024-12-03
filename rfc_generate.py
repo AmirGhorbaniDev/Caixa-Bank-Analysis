@@ -100,7 +100,7 @@ aggregated_df.groupby('risk_category').mean()
 aggregated_df['calc'] = (aggregated_df['yearly_income'] + aggregated_df['per_capita_income'] - aggregated_df['total_debt'])
 
 aggregated_df.groupby('risk_category').nunique()
-
+------------------------------------------------------------------------------------------------------
 from sklearn.model_selection import train_test_split
 
 # Define features and target
@@ -195,7 +195,7 @@ y_pred = rfc.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
-"""import joblib
+import joblib
 
 # Save the trained model
 joblib.dump(rfc, 'rfc.pkl')
@@ -203,8 +203,9 @@ joblib.dump(rfc, 'rfc.pkl')
 # Save the scaler
 joblib.dump(scaler, 'rfc_scaler.pkl')
 
-print("Model and scaler saved successfully!")"""
+print("Model and scaler saved successfully!")
 
+-------------------------------------------------------------------------------------
 import pandas as pd
 
 A = [{"Current Age":90,"Yearly Income":50000,"Total Debt":0,"Credit Score":400,"Per Capita Income":1000,"Gender":1,"Amount":200000000,"Number of Credit Cards":9,"Retirement Age":91,"Debt-to-Income Ratio":0,"Credit Utilization":0.5,"Age-to-Retirement Ratio":0.01098901098901099,"Debt-Credit Interaction":10000}]

@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1IGL3iahJaKYwnkAFJs14l0m-ADGeg6IC
 """
 
-pip install pycaret
+#pip install pycaret
 
 import os
 from google.cloud import  bigquery

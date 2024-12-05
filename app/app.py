@@ -4,8 +4,8 @@ import numpy as np
 from PIL import Image
 
 # Load the model and scaler
-model_path = '/Users/amir/Desktop/Caixa Bank/Caixa-Bank-Analysis/rfc.pkl'  # Replace with the path to your uploaded model
-scaler_path = '/Users/amir/Desktop/Caixa Bank/Caixa-Bank-Analysis/rfc_scaler.pkl'  # Replace with the path to your scaler, if any
+model_path = ''  # Replace with the path to your uploaded model
+scaler_path = ''  # Replace with the path to your scaler, if any
 
 model = joblib.load(model_path)
 scaler = joblib.load(scaler_path)

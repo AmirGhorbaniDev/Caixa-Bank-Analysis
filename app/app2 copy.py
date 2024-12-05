@@ -3,8 +3,9 @@ import joblib
 import numpy as np
 from PIL import Image
 
-# Load the trained model and 
+# Load the trained model and scaler
 model_path = ""  # Update with your model path
+
 
 model = joblib.load(model_path)
 
@@ -58,7 +59,7 @@ st.write(
 
 # Add a logo image
 image = Image.open('/Users/amir/Desktop/Caixa Bank/CaixaBank_logo.svg.png')  # Update with your image path
-st.image(image, caption="Risk Prediction Analysis", use_column_width=True)
+st.image(image, caption="Risk Prediction Analysis", use_container_width=True)
 
 # Input fields for customer details
 st.subheader("Enter Customer Details")
@@ -82,9 +83,12 @@ retirement_age = st.number_input(
     value=max(65, current_age + 1)
 )
 debt_to_income_ratio = total_debt / yearly_income if yearly_income > 0 else 0
-credit_utilization = st.number_input("Credit Utilization", value=0.5)
+
+# Replacing sliders with proper input fields
+credit_utilization = st.text_input("Credit Utilization", value="0.5")
+debt_credit_interaction = st.text_input("Debt-Credit Interaction", value="10000.0")
+
 age_to_retirement_ratio = (retirement_age - current_age) / retirement_age if retirement_age > 0 else 0
-debt_credit_interaction = st.number_input("Debt-Credit Interaction", value=10000.0)
 
 # Button for Prediction
 if st.button("Predict Risk"):
@@ -101,10 +105,12 @@ if st.button("Predict Risk"):
         num_credit_cards,
         retirement_age,
         debt_to_income_ratio,
-        credit_utilization,
+        float(credit_utilization),  # Ensure conversion from string to float
         age_to_retirement_ratio,
-        debt_credit_interaction
+        float(debt_credit_interaction)  # Ensure conversion from string to float
     ]])
+
+    # Scale the input data
 
 
     # Predict the risk category

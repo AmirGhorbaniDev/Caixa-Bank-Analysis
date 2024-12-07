@@ -1,21 +1,17 @@
 # 🛡️ Fraud Risk Analysis Project
 
-🚀 **Analyze customer data to assess risk levels with precision and clarity.** This project utilizes cutting-edge tools and advanced data analytics to classify customers into risk categories—**High Risk**, **Medium Risk**, and **Low Risk**—based on financial and behavioral metrics such as income, debt, credit scores, and fraud history.
+This project analyzes customer data to assess their risk levels based on financial and behavioral metrics. The data includes information such as income, debt, credit scores, and fraud history, and the project categorizes customers into different risk categories: High Risk, Medium Risk, and Low Risk.
 
----
+## Project Overview
+This project utilizes SQL and BigQuery to:
+1. **Clean and transform data**: Ensure all data fields are ready for analysis.
+2. **Calculate risk categories**: Add a calculated `risk_category` column based on predefined rules.
+3. **Enhance dataset**: Introduce a new `has_fraud_history` column to indicate whether a customer has a history of fraud.
+4. **Publish final dataset**: Create a clean, enriched table ready for further analysis or reporting.
 
-## 📖 Overview
-This project leverages **SQL** and **Google BigQuery** to:
-1. 🧹 **Clean and transform data**: Preparing fields for accurate analysis.
-2. 📊 **Calculate risk categories**: Introducing a `risk_category` column with custom logic.
-3. 🔍 **Enhance dataset**: Adding a `has_fraud_history` column for easy fraud detection.
-4. 🏁 **Deliver a final enriched table**: Ready for visualization, reporting, or further analysis.
+## Dataset
+The dataset includes the following fields:
 
----
-
-## 📂 Dataset
-
-### Fields:
 | Column Name         | Type     | Description                                         |
 |---------------------|----------|-----------------------------------------------------|
 | `customer_id`       | INTEGER  | Unique identifier for each customer                |

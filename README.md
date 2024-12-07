@@ -52,8 +52,9 @@ The `risk_category` is calculated using this custom logic:
 
 ### 2️⃣ Add `risk_category` Column
 Use this SQL query to classify customers into risk levels:
-```sql
-CREATE OR REPLACE TABLE `project.dataset.generateddata_with_risk` AS
+
+### sql
+```CREATE OR REPLACE TABLE `project.dataset.generateddata_with_risk` AS
 SELECT
     *,
     CASE
@@ -65,14 +66,14 @@ SELECT
         ELSE 'Low Risk'
     END AS risk_category
 FROM
-    `project.dataset.generateddata`;
+    `project.dataset.generateddata`;```
 
 ### 3️⃣ Add has_fraud_history Column
 This column flags customers with a fraud history:
 
 sql
-Copy code
-CREATE OR REPLACE TABLE `project.dataset.generateddata_with_fraud_history` AS
+
+```CREATE OR REPLACE TABLE `project.dataset.generateddata_with_fraud_history` AS
 SELECT
     *,
     CASE 
@@ -80,17 +81,18 @@ SELECT
         ELSE 0
     END AS has_fraud_history
 FROM
-    `project.dataset.generateddata_with_risk`;
+    `project.dataset.generateddata_with_risk`;```
+
 ### 4️⃣ Publish Final Table
 Export the final enriched table with all new columns for visualization or reporting.
+
+<img width="1188" alt="Dashboard" src="https://github.com/user-attachments/assets/7c300753-d914-4b7a-8f59-55f057563d9c">
 
 ### 🛠️ Tools & Technologies
 Google BigQuery: SQL-based data analysis and transformation.
 Python: For machine learning integration and data preprocessing.
 GitHub: To track changes and document the project.
 🗂️ File Structure
-plaintext
-Copy code
 .
 ├── 📁 Database/               # Dataset storage and updates
 ├── 📁 app/                    # Code and scripts for transformations

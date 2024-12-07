@@ -133,7 +133,10 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-[Your Name](https://github.com/your-username)
-
+[Amir Ghorbani](https://github.com/AmirGhorbaniDev/)
+[Kai](https://github.com/KWetterwald)
+[Donald](https://github.com/SubRosaCodr)
 ---
 Feel free to reach out for questions or suggestions!
+---
+## Data Set Source : https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets

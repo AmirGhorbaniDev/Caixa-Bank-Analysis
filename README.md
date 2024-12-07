@@ -9,6 +9,9 @@ This project utilizes SQL and BigQuery to:
 3. **Enhance dataset**: Introduce a new `has_fraud_history` column to indicate whether a customer has a history of fraud.
 4. **Publish final dataset**: Create a clean, enriched table ready for further analysis or reporting.
 
+<img width="1188" alt="Dashboard" src="https://github.com/user-attachments/assets/4825c6cc-a512-4517-9032-6b10b50afdb7">
+
+
 ## Dataset
 The dataset includes the following fields:
 

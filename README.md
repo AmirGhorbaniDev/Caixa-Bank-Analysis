@@ -134,8 +134,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 [Amir Ghorbani](https://github.com/AmirGhorbaniDev/)
-[Kai](https://github.com/KWetterwald)
-[Donald](https://github.com/SubRosaCodr)
+/ [Kai](https://github.com/KWetterwald)
+/ [Donald](https://github.com/SubRosaCodr)
 ---
 Feel free to reach out for questions or suggestions!
 ---

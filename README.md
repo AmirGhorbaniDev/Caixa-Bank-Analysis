@@ -122,13 +122,14 @@ Share your feedback to improve the project.
 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ---
-### 🙋‍♂️ Author
+### 🙋‍♂️ PM
 👤 Amir Ghorbani
 
 ✨ Special thanks to the amazing contributors:
 
 Kai
 Donald
+---
 🛠️ Dataset Source
 Kaggle: Transactions Fraud Datasets
 ---

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # 🛡️ Fraud Risk Analysis Project
 
 This project analyzes customer data to assess their risk levels based on financial and behavioral metrics. The data includes information such as income, debt, credit scores, and fraud history, and the project categorizes customers into different risk categories: High Risk, Medium Risk, and Low Risk.
@@ -136,13 +134,3 @@ Kaggle: Transactions Fraud Datasets
 ---
 🚀 Let’s make data analysis powerful and accessible!
 Feel free to fork and start exploring the world of fraud detection.
-
-
---- 
-This README includes a professional yet stylish structure with emojis, Markdown styling, and clear sections for easy navigation.
-
-
-
-
-
->>>>>>> 77f97fe40867bdf6a9beeea45ea7a96a2b88d422
